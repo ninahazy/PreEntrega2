@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"IBMPlexMono-Regular";
+    src: url(../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+header {
+    background-color: #ffffff;
+    padding: 0.5px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  
+
+}
+body {
+    font-family: "IBMPlexMono-Regular";
+    background-image: url(../img/Cloud9.png);
+    background-repeat:repeat-y;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+
+}
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+ }
+
+.logo {
+    color: #8d99ae;
+
+}
+.menu {
+    text-align: center;
+}
+
+/* INDEX*/
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
+    padding-top: 10%;
+    margin-left: 20%;
+    
+}
+
+main p {
+    text-align: center;
+
+}
+
+
+.cajas {
+    display: inline-block
+    
+}
+
+.obras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    display:inline-block;
+    text-align: center;
+    padding-inline: 1rem;
+}
+ul {
+    list-style-type: none;
+
+
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+
+
+}
+.menu li a:hover {
+    background-color: #edede9;
+
+}
+
+h2 {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+
+.workshops img {
+    width: 150px;
+    height: 150px;
+}
+
+.workshops p {
+    width: 50%
+}
+
+/*1 rem=16px*/
+.título-workshops {
+    font-size: 1.3rem;
+
+}
+
+.descripción-workshops {
+    font-size: 1rem;
+}
+
+.blog {
+    background-color: #8d99ae;
+    width: 600px;
+    height: 400px;
+    margin-left: 10%;
+
+}
+
+.sonoro {
+    margin-left: 60%;
+}
+
+/*Fin INDEX*/
+
+
+/*GALERIA "Ver-Obras" */
+
+.title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+.images {
+    display: grid;
+    grid-template-columns: 1000px 1000px;
+    grid-template-rows: 1000☺px 1000☺px 1000px;
+
+/*Fin GALERIA "Ver-Obras"*/
+
+/*ACERCA-DE*/
+
+
+/*Fin ACERCA-DE*/
+
+/*CONCTACTO*/
+
+H2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.ig {
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+/*Fin CONTACTO */
