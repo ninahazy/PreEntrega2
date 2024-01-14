@@ -19,7 +19,7 @@ header {
 }
 body {
     font-family: "IBMPlexMono-Regular";
-    background-image: url(../img/Cloud9.png);
+    background-image: url(../img/Cloud9nobackground.png);
     background-repeat:repeat-y;
     background-position: center;
     /*efecto parallax*/
@@ -44,6 +44,7 @@ footer {
 
 h1 {
     margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -93,24 +94,37 @@ ul {
 
 }
 
-h2 {
-    margin-top: 5%;
-    margin-left: 3%;
+
+.workshops {
+    border: 1px ;
+    display: grid;
+    grid-template-columns: 500px 500px;
 }
 
-
 .workshops img {
+    border-radius: 30%;
     width: 150px;
     height: 150px;
+    float: left;
+
 }
 
 .workshops p {
+    margin-left: 40%;
     width: 50%
+    text-align: justify-all;
 }
 
 /*1 rem=16px*/
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 .título-workshops {
     font-size: 1.3rem;
+
 
 }
 
@@ -122,6 +136,7 @@ h2 {
     background-color: #8d99ae;
     width: 600px;
     height: 400px;
+    margin-top: 10%;
     margin-left: 10%;
 
 }
@@ -184,4 +199,4 @@ H2 {
     align-items: center;
     justify-content: center;     
 }
-/*Fin CONTACTO */
+/*Fin CONTACTO*/
