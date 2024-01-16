@@ -1,3 +1,16 @@
+
+/*query tablet*/
+@media (max-width: 991px) and (min-width:574px){
+
+}
+
+/*query escritorio*/
+@media (min-width: 1180px) and (max-width:480px){
+
+}
+
+/*Reset CSS*/
+/*Caract. aplicables a todo el sitio*/
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +28,12 @@ header {
     top: 0px;
     z-index: 1;
   
-
 }
+
+
 body {
+    max-width: 80%;
+    margin-left: 10%;
     font-family: "IBMPlexMono-Regular";
     background-image: url(../img/Cloud9nobackground.png);
     background-repeat:repeat-y;
@@ -27,10 +43,19 @@ body {
 
 }
 
-footer {
-    margin-top: 5%;
-    text-align: center;
- }
+/*query movil, lo puse debajo del body para poder sacarle la imagen de fondo, de la otra forma predominaba la regla del body por cascada*/
+@media (max-width: 480px){
+
+    body{
+      background-color: rgba(255, 255, 255, 0.781);
+      background-image:none;
+      font-size: 16px;
+    }  
+    
+    header {
+        
+    }
+   }
 
 .logo {
     color: #8d99ae;
@@ -39,6 +64,11 @@ footer {
 .menu {
     text-align: center;
 }
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+ }
 
 /* INDEX*/
 
@@ -78,15 +108,14 @@ main p {
     text-align: center;
     padding-inline: 1rem;
 }
+
 ul {
     list-style-type: none;
-
-
 }
+
 .menu li a {
     text-decoration: none;
     color: black;
-
 
 }
 .menu li a:hover {
@@ -94,32 +123,35 @@ ul {
 
 }
 
-
 .workshops {
-    border: 1px ;
-    display: grid;
-    grid-template-columns: 500px 500px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+
 }
 
 .workshops img {
+    margin-left: 5%;
     border-radius: 30%;
-    width: 150px;
-    height: 150px;
-    float: left;
+    width: 200px;
+    height: 200px;
+    float: left
 
 }
 
+.título-workshops {
+    margin-bottom: 2%;
+}
 .workshops p {
-    margin-left: 40%;
-    width: 50%
-    text-align: justify-all;
+    width: 50%   
+    align:center;
+    margin-left: 35%
 }
 
 /*1 rem=16px*/
 
 h2 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10%;
     margin-bottom: 50px;
 }
 .título-workshops {
@@ -133,44 +165,47 @@ h2 {
 }
 
 .blog {
-    background-color: #8d99ae;
+
+    background-color: black; opacity:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 5%;
     width: 600px;
     height: 400px;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 250%;
+}
 
+article p, h3 {
+    color:#ffffff;
 }
 
 .sonoro {
     margin-left: 60%;
 }
 
+h4 {
+    margin-bottom: 5%;
+}
+
+.sonoro p {
+    margin-bottom: 5%; 
+}
+
 /*Fin INDEX*/
 
 
 /*GALERIA "Ver-Obras" */
+.container {
 
-.title h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
-.title p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}    
-
-.images {
-    display: grid;
-    grid-template-columns: 1000px 1000px;
-    grid-template-rows: 1000☺px 1000☺px 1000px;
 
 /*Fin GALERIA "Ver-Obras"*/
 
 /*ACERCA-DE*/
-
 
 /*Fin ACERCA-DE*/
 
