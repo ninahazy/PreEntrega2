@@ -1,0 +1,104 @@
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+article p, h3 {
+    color:#ffffff;
+}
+
+h4 {
+    margin-bottom: 5%;
+}
+
+main {
+
+    img {
+    width: 300px;
+    height: 300px;
+    padding-top: 10%;
+    margin-left: 20%; 
+    }
+    
+    p {
+        text-align: center;
+    
+    }    
+    
+}
+
+
+.cajas {
+    display: inline-block
+    
+}
+
+.obras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workshops {
+    display:grid;
+    grid-template-columns: 50% 50%;
+
+    img {
+        margin-left: 5%;
+        border-radius: 30%;
+        width: 200px;
+        height: 200px;
+        float: left
+    
+    }
+    p {
+        width: 50%   
+        align center;
+        margin-left: 35%
+    }
+
+    background-color: #ffffff;
+}
+
+.título-workshops {
+    margin-bottom: 2%;
+    font-size: 1.3rem;
+
+}
+
+/*1 rem=16px*/
+    
+.descripción-workshops {
+    font-size: 1rem;
+}
+
+.blog {
+
+    background-color: black; opacity:50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 5%;
+    width: 600px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 250%;
+}
+
+.sonoro {
+    margin-left: 60%;
+    p {
+        margin-bottom: 5%; 
+    }
+}
+
+/*Fin INDEX*/

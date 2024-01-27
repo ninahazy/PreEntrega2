@@ -1,0 +1,54 @@
+/*query tablet*/
+@media (max-width: 991px) and (min-width:574px){
+
+}
+
+/*query escritorio*/
+@media (min-width: 1180px) and (max-width:480px){
+
+}
+
+/*Reset CSS*/
+/*Caract. aplicables a todo el sitio*/
+* {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"IBMPlexMono-Regular";
+    src: url(../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+body {
+    max-width: 80%;
+    margin-left: 10%;
+    font-family: "IBMPlexMono-Regular";
+    background-image: url(../img/Cloud9nobackground.png);
+    background-repeat:repeat-y;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+
+}
+
+.logo {
+    color: #8d99ae;
+
+}
+
+.menu {
+    text-align: center;
+}
+
+/*query movil, lo puse debajo del body para poder sacarle la imagen de fondo, de la otra forma predominaba la regla del body por cascada*/
+@media (max-width: 480px){
+    body{
+      background-color: $fondo-primario;
+      background-image:none;
+      font-size: 16px;
+
+    }
+
+    }

@@ -1,237 +1,169 @@
-
+@charset "UTF-8";
 /*query tablet*/
-@media (max-width: 991px) and (min-width:574px){
-
-}
-
 /*query escritorio*/
-@media (min-width: 1180px) and (max-width:480px){
-
-}
-
 /*Reset CSS*/
 /*Caract. aplicables a todo el sitio*/
 * {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family:"IBMPlexMono-Regular";
-    src: url(../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+  font-family: "IBMPlexMono-Regular";
+  src: url(../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
 }
-
-header {
-    background-color: #ffffff;
-    padding: 0.5px;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-  
-}
-
-
 body {
-    max-width: 80%;
-    margin-left: 10%;
-    font-family: "IBMPlexMono-Regular";
-    background-image: url(../img/Cloud9nobackground.png);
-    background-repeat:repeat-y;
-    background-position: center;
-    /*efecto parallax*/
-    background-attachment: fixed;
+  max-width: 80%;
+  margin-left: 10%;
+  font-family: "IBMPlexMono-Regular";
+  background-image: url(../img/Cloud9nobackground.png);
+  background-repeat: repeat-y;
+  background-position: center;
+  /*efecto parallax*/
+  background-attachment: fixed;
+}
 
+.logo {
+  color: #8d99ae;
+}
+
+.menu {
+  text-align: center;
 }
 
 /*query movil, lo puse debajo del body para poder sacarle la imagen de fondo, de la otra forma predominaba la regla del body por cascada*/
-@media (max-width: 480px){
-
-    body{
-      background-color: rgba(255, 255, 255, 0.781);
-      background-image:none;
-      font-size: 16px;
-    }  
-    
-    header {
-        
-    }
-   }
-
-.logo {
-    color: #8d99ae;
-
+@media (max-width: 480px) {
+  body {
+    background-color: rgba(255, 255, 255, 0.781);
+    background-image: none;
+    font-size: 16px;
+  }
 }
-.menu {
-    text-align: center;
+header nav {
+  background-color: #ffffff;
+  padding: 0.5px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
-
-footer {
-    margin-top: 5%;
-    text-align: center;
- }
-
-/* INDEX*/
+header nav li {
+  display: inline-block;
+  text-align: center;
+  padding-inline: 1rem;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav li a {
+  text-decoration: none;
+  color: black;
+}
+header nav li a:hover {
+  background-color: #edede9;
+}
 
 h1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
-
-main img {
-    width: 300px;
-    height: 300px;
-    padding-top: 10%;
-    margin-left: 20%;
-    
-}
-
-main p {
-    text-align: center;
-
-}
-
-
-.cajas {
-    display: inline-block
-    
-}
-
-.obras {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu li {
-    display:inline-block;
-    text-align: center;
-    padding-inline: 1rem;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: black;
-
-}
-.menu li a:hover {
-    background-color: #edede9;
-
-}
-
-.workshops {
-    display:grid;
-    grid-template-columns: 50% 50%;
-
-}
-
-.workshops img {
-    margin-left: 5%;
-    border-radius: 30%;
-    width: 200px;
-    height: 200px;
-    float: left
-
-}
-
-.título-workshops {
-    margin-bottom: 2%;
-}
-.workshops p {
-    width: 50%   
-    align:center;
-    margin-left: 35%
-}
-
-/*1 rem=16px*/
 
 h2 {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 50px;
-}
-.título-workshops {
-    font-size: 1.3rem;
-
-
-}
-
-.descripción-workshops {
-    font-size: 1rem;
-}
-
-.blog {
-
-    background-color: black; opacity:50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    border-radius: 5%;
-    width: 600px;
-    height: 400px;
-    margin-top: 10%;
-    margin-left: 5%;
-    text-align: center;
-    line-height: 250%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 50px;
 }
 
 article p, h3 {
-    color:#ffffff;
-}
-
-.sonoro {
-    margin-left: 60%;
+  color: #ffffff;
 }
 
 h4 {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
+main img {
+  width: 300px;
+  height: 300px;
+  padding-top: 10%;
+  margin-left: 20%;
+}
+main p {
+  text-align: center;
+}
+
+.cajas {
+  display: inline-block;
+}
+
+.obras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workshops {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.workshops img {
+  margin-left: 5%;
+  border-radius: 30%;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.workshops p {
+  width: 50% align center;
+  margin-left: 35%;
+}
+
+.título-workshops {
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+/*1 rem=16px*/
+.descripción-workshops {
+  font-size: 1rem;
+}
+
+.blog {
+  background-color: black;
+  opacity: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 5%;
+  width: 600px;
+  height: 400px;
+  margin-top: 10%;
+  margin-left: 5%;
+  text-align: center;
+  line-height: 250%;
+}
+
+.sonoro {
+  margin-left: 60%;
+}
 .sonoro p {
-    margin-bottom: 5%; 
+  margin-bottom: 5%;
 }
 
 /*Fin INDEX*/
-
-
-/*GALERIA "Ver-Obras" */
-.container {
-
+footer {
+  text-align: center;
+  margin-top: 20%;
 }
-
-/*Fin GALERIA "Ver-Obras"*/
-
-/*ACERCA-DE*/
-
-/*Fin ACERCA-DE*/
 
 /*CONCTACTO*/
-
-H2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ig {
-    display: flex;
-    align-items: center;
-    justify-content: center;      
-}
-
-.x {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-.mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;     
-}
 /*Fin CONTACTO*/
+
+/*# sourceMappingURL=styles.css.map */
