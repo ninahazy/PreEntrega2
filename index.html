@@ -7,6 +7,8 @@
     <!--favicon-->
     <link rel="shortcut icon" href="img/Cloud9nobackground - copia.png" type="image/x-icon">
     <title>Cloud-9</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -14,31 +16,48 @@
 <body>
 
     <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cloud-9</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/workshops.html">Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/galeria.html">Ver-Obras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/about.html">Acerca-de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                        </li>
 
-        <nav>
-            <div class="logo">Cloud-9</div>
-            <!--lista no ordenada con el menu-->
-            <ul class="menu">
-
-                <li><a href="  index.html">Inicio</a></li>
-                <li><a href="pages/workshops.html">Workshops</a></li>
-                <li><a href="pages/galeria.html">Ver-Obras</a></li>
-                <li><a href="pages/about.html">Acerca-de</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!--OBRAS EN EXPOSICIÓN / Likeado a Ver-Obras-->
     <main>
         <section>
-            
+
             <h1>Galería en la Nube</h1>
             <h2>Curaduría de esta semana: Objetos Inservibles</h2>
 
-        
+
         </section>
-        
+
         <section class="obras">
 
 
@@ -57,8 +76,8 @@
                 </div>
 
                 <div class="cajas">
-                    <img src="img/t-shirt Chris Bakay.jpg"
-                        alt="Remera de acrílico expuesta en una percha" title="Retired Jerseys by Chris Bakay">
+                    <img src="img/t-shirt Chris Bakay.jpg" alt="Remera de acrílico expuesta en una percha"
+                        title="Retired Jerseys by Chris Bakay">
                     <p>Chris Bakay</p>
                 </div>
 
@@ -75,29 +94,34 @@
     <h2>Workshops Disponibles</h2>
 
     <section class="workshops">
-        
-        <div>
-            <img class="img1" src="img/The Surreal Portraiture of Simple Objects.jpg" alt="cubo espejo 3D derretido flotando sobre piso cuadriculado">
 
-                <div>
-                    <p class="título-workshops"><strong>Modelado 3D</strong> </p>
-                    <p class="descripción-workshops">
-                        <strong>Representaciones</strong> tridimensionales de objetos y escenarios,  <strong>software</strong> especializado .  Texturización. Iluminación. Animación. <strong>Geometría</strong> digital.
-                    </p>
-                </div> 
+        <div>
+            <img class="img1" src="img/The Surreal Portraiture of Simple Objects.jpg"
+                alt="cubo espejo 3D derretido flotando sobre piso cuadriculado">
+
+            <div>
+                <p class="título-workshops"><strong>Modelado 3D</strong> </p>
+                <p class="descripción-workshops">
+                    <strong>Representaciones</strong> tridimensionales de objetos y escenarios,
+                    <strong>software</strong> especializado . Texturización. Iluminación. Animación.
+                    <strong>Geometría</strong> digital.
+                </p>
+            </div>
 
         </div>
 
         <div>
-            <img class="img2" src="img/puesta en escena.jpg" alt="mesa cubierta con telas objetos dispuestos sobre ella (jarrón con flores, uvas, taza)">
-                <div>
-                        <p class="título-workshops"><strong> Puesta en Escena</strong></p>
-                        <p class="descripción-workshops">
-                        Técnicas fundamentales . <strong>Creación</strong> y dirección de espacios escénicos . <strong>Diseño</strong> de escenarios. Iluminación, sonido, utilería y vestuario . 
-                        <strong>Atmósfera</strong> general de una producción teatral o cinematográfica.
-                        </p>
-    
-                </div>
+            <img class="img2" src="img/puesta en escena.jpg"
+                alt="mesa cubierta con telas objetos dispuestos sobre ella (jarrón con flores, uvas, taza)">
+            <div>
+                <p class="título-workshops"><strong> Puesta en Escena</strong></p>
+                <p class="descripción-workshops">
+                    Técnicas fundamentales . <strong>Creación</strong> y dirección de espacios escénicos .
+                    <strong>Diseño</strong> de escenarios. Iluminación, sonido, utilería y vestuario .
+                    <strong>Atmósfera</strong> general de una producción teatral o cinematográfica.
+                </p>
+
+            </div>
 
 
         </div>
