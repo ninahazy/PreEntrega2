@@ -24,10 +24,6 @@ body {
   background-attachment: fixed;
 }
 
-.logo {
-  color: #8a919e;
-}
-
 .menu {
   text-align: center;
 }
@@ -65,7 +61,7 @@ header nav li a:hover {
 
 h1 {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -83,7 +79,7 @@ h4 {
   margin-bottom: 5%;
 }
 
-main img {
+.cajas img {
   width: 300px;
   height: 300px;
   padding-top: 10%;
