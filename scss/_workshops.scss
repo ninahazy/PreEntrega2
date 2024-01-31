@@ -1,0 +1,36 @@
+/*Workshops INDEX*/
+
+.workshops {
+    display:grid;
+    grid-template-columns: 50% 50%;
+
+    img {
+        margin-left: 5%;
+        border-radius: 30%;
+        width: 200px;
+        height: 200px;
+        float: left
+    
+    }
+    p {
+        width: 50%   
+        align center;
+        margin-left: 35%
+    }
+
+    background-color: #ffffff;
+}
+
+.título-workshops {
+    margin-bottom: 2%;
+    font-size: 1.3rem;
+
+}
+
+/*1 rem=16px*/
+    
+.descripción-workshops {
+    font-size: 1rem;
+}
+
+/*Fin Workshops INDEX*/

@@ -2,6 +2,10 @@
 @media (max-width: 991px) and (min-width:574px){
 
 }
+/*query movil*/
+@media (max-width: 480px){
+    
+}
 
 /*query escritorio*/
 @media (min-width: 1180px) and (max-width:480px){
@@ -43,12 +47,19 @@ body {
 }
 
 /*query movil, lo puse debajo del body para poder sacarle la imagen de fondo, de la otra forma predominaba la regla del body por cascada*/
-@media (max-width: 480px){
-    body{
-      background-color: $fondo-primario;
-      background-image:none;
-      font-size: 16px;
 
-    }
 
-    }
+@media (max-width: 768px) {
+
+        .blog {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+        }
+  
+        article {
+          max-width: 100%; /* Take full width on smaller screens */
+        }
+  
+        .articulo {
+          font-size: 1.2em; /* Adjust font size for smaller screens */
+        }
+      }

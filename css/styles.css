@@ -24,6 +24,10 @@ body {
   background-attachment: fixed;
 }
 
+.logo {
+  color: #8a919e;
+}
+
 .menu {
   text-align: center;
 }
@@ -67,7 +71,7 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-top: 10%;
+  margin-top:5%;
   margin-bottom: 50px;
 }
 
@@ -79,17 +83,12 @@ h4 {
   margin-bottom: 5%;
 }
 
-.cajas img {
-  width: 300px;
-  height: 300px;
-  padding-top: 10%;
-  margin-left: 20%;
-}
 main p {
   text-align: center;
 }
 
 .cajas {
+  display: flex;
   display: inline-block;
 }
 
@@ -103,6 +102,7 @@ main p {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 .workshops img {
   margin-left: 5%;
   border-radius: 30%;
@@ -110,6 +110,7 @@ main p {
   height: 200px;
   float: left;
 }
+
 .workshops p {
   width: 50% align center;
   margin-left: 35%;
@@ -126,21 +127,26 @@ main p {
 }
 
 .blog {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-color: black;
   opacity: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  border-radius: 5%;
-  width: 600px;
-  height: 400px;
-  margin-top: 10%;
-  margin-left: 5%;
   text-align: center;
-  line-height: 250%;
+}
+
+article {
+  max-width: 600px;
+}
+
+.articulo {
+  font-size: 1.5em;
 }
 
 .sonoro {
+  margin-top: 5%;
   margin-left: 60%;
 }
 .sonoro p {
@@ -162,4 +168,10 @@ footer {
 
 /*Fin CONTACTO*/
 
-/*# sourceMappingURL=styles.css.map */
+.carousel-inner img {
+  max-width: 90%;
+      height: auto;
+      margin: auto;
+}
+
+# sourceMappingURL=styles.css.map
