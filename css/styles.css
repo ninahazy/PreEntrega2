@@ -122,7 +122,7 @@ main p {
   font-size: 1rem;
 }
 
-button {
+.programa {
   background-color:#81afe0;
   color: #fff;
   padding: 8px 16px;
@@ -134,7 +134,7 @@ button {
 
 }
 
-button:hover {
+.programa:hover {
     background-color: #d7a0ec;
   }
 
@@ -221,4 +221,28 @@ footer {
       margin: auto;
 }
 
+
+/*ABOUT*/
+.main-about {
+  text-align: center;
+  padding: 20px;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about-section div {
+  max-width: 800px;
+  text-align: justify;
+}
+.img-about {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.section-about {
+  margin-top: 2%;
+}
 # sourceMappingURL=styles.css.map
