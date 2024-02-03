@@ -69,6 +69,20 @@ h1 {
   text-align: center;
 }
 
+.link-galería {
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;  
+  margin-bottom: 1%;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+.link-galería:hover {
+  color:rgb(64, 135, 153);
+}
+
 h2 {
   text-align: center;
   margin-top:5%;
@@ -122,7 +136,7 @@ main p {
   font-size: 1rem;
 }
 
-.programa {
+.programa, .título-workshops {
   background-color:#81afe0;
   color: #fff;
   padding: 8px 16px;
@@ -137,6 +151,15 @@ main p {
 .programa:hover {
     background-color: #d7a0ec;
   }
+
+ .título-workshops:hover {
+  background-color: #d7a0ec;
+} 
+
+.título-workshops {
+margin-top: 1rem;
+align-items: center;
+}
 
 .workshops-main {
   display: flex;
